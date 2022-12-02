@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="row py-5">
+        <app-search-bar
+        (searchResult)="setUserData($event)"
+        ></app-search-bar>
+        <div class="col-lg-6 offset-lg-3" *ngIf="userData">
+            <app-user
+            *ngIf="userData && userData.id; else notFound"
+            [userData]="userData"
+            ></app-user>
+            <ng-template #notFound>
+                <div class="text-center">
+                    <p>
+                        User not found, please search a new one             
+                    </p>
+                </div>
+            </ng-template>
+        </div>
+        <div class="text-center" *ngIf="!userData">
+            <p>
+                Search a github user to check              
+            </p>
+        </div>
+    </div>
+</div>

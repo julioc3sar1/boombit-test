@@ -1,0 +1,15 @@
+<div class="col-lg-6 offset-lg-3">
+    <div class="input-group mb-3" id="search_field">
+        <button 
+        class="btn border-0" 
+        disabled
+        ><i class="bi bi-search"></i></button>
+        <input [(ngModel)]="search" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="search-button">
+        <button 
+        class="btn btn-primary" 
+        type="button" 
+        id="search-button"
+        (click)="searchUser()"
+        >Search</button>
+    </div>
+</div>

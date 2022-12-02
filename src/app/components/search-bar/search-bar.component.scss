@@ -1,0 +1,15 @@
+.form-control:focus {
+    box-shadow: none;
+}
+#search_field{
+    padding: .5rem;
+    background: white;
+    border-radius: 8px;
+    .form-control{
+        border: 0;
+        height: 45px;
+    }
+    button{
+        border-radius: 8px;
+    }
+}

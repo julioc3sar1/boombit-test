@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import '/src/app/scss/variables.scss';
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: $light-background;
+    color: $light-color;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
