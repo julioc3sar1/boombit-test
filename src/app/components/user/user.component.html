@@ -31,10 +31,10 @@
         </div>
         <div class="user_social row">
             <div class="col-md-6">
-                <address><i class="bi bi-pin-map-fill"></i>San francisco</address>
+                <address><i class="bi bi-pin-map-fill"></i>{{userData.location||"Not available"}}</address>
             </div>
             <div class="col-md-6">
-                <a href="{{userData.url}}"><i class="bi bi-link-45deg"></i><span>{{userData.url}}</span></a>
+                <a href="{{userData.url}}"><i class="bi bi-link-45deg float-start"></i><span>{{userData.url}}</span></a>
             </div>
             <div class="col-md-6">
                 <a href=""><i class="bi bi-twitter"></i>{{userData.twitter_username||"Not available"}}</a>

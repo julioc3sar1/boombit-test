@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'boombit-test';
   theme = 'Dark'
+
+  changeTheme(){
+    document.body.classList.toggle('dark-theme');
+  }
 }

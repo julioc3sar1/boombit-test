@@ -1,3 +1,14 @@
+body{
+    --bkg-color: #f4f7ff;
+    --text-color: #abadb8;
+    --card-bg:white;
+    &.dark-theme{
+    --card-bg:#1f2a48;
+    --bkg-color: #141c30;
+    --text-color: #abadb8;
+    }
+}
+
 $light-background: #f4f7ff;
 $dark-background: #141c30;
 $light-color: #abadb8;

@@ -1,7 +1,7 @@
 @import '/src/app/scss/variables.scss';
 
 .user{
-    background-color: white;
+    background-color: var(--card-bg);
     border: 0;
     margin-bottom: 1.25rem;
     &_info{
@@ -13,7 +13,7 @@
         }
     }
     &_followers{
-        background-color: $light-background;
+        background-color: var(--bkg-color);
         padding: 1rem;
         display: flex;
         justify-content: space-around;
@@ -34,6 +34,7 @@
         }
         a{
             text-decoration: none;
+            color: #4c6898;
         }
         &>*{
             margin-bottom: .5rem;

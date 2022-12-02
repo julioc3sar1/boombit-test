@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import '/src/app/scss/variables.scss';
+
 body{
+    // background-color: var(--bg-dark);
     font-family: 'Roboto Mono', monospace;
-    background-color: $light-background;
-    color: $light-color;
+    background-color: var(--bkg-color);
+    color: var(--text-color);
+}
+
+a{
+    color: var(--text-color) !important;
 }
 
 .avatar{
